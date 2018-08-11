@@ -25,6 +25,15 @@ class Instructor
     test.map{|test| test.test_status = "failed"}
   end
 
+  def pass_student_ins(student_name)
+    BoatingTest.all.map do |test|
+      if test.student.first_name == student_name && test.instructor == self
+        test.test_status = "passed"
+      end
+    end
+  end
+  #pass_student test by this instructor
+
   def self.student_grade_percentage(student_first_name)
     student_test = BoatingTest.all.select{|test| test.student.first_name == student_first_name}
     student_test_count = student_test.length

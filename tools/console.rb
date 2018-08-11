@@ -20,7 +20,7 @@ instructor4 = Instructor.new("instructor4")
 
 boatingtest1 = BoatingTest.new(student1, instructor3, "aa", "passed")
 boatingtest2 = BoatingTest.new(student3, instructor2, "bb", "pending")
-boatingtest3 = BoatingTest.new(student4, instructor4, "cc", "complete")
+boatingtest3 = BoatingTest.new(student4, instructor1, "cc", "complete")
 boatingtest4 = BoatingTest.new(student3, instructor4, "cc", "complete")
 boatingtest5 = BoatingTest.new(student3, instructor1, "dd", "complete")
 
